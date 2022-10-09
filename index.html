@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
+    <script src="https://kit.fontawesome.com/b0f29e9bfe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Previous Button -->
+    <button id="prev-btn">
+        <i class="fas fa-arrow-circle-left"></i>
+    </button>
+
+
+    <!-- Book -->
+    <div id="book" class="book">
+        <!-- Paper 1 -->
+        <div id="p1" class="paper">
+            <div class="front">
+                <div id="f1" class="front-content" style="box-shadow: 10px 10px grey;">
+                    <h1 style="margin-left: 20px;">Halaman pertama
+                        <br>
+                        <img src="./Jobsheet 3/LOGO.png" style="margin-left: 25px;">
+                    </h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b1" class="back-content">
+                    <h1 style="margin-left: 50px;">Halaman kedua
+                        <img src="./Wallpaper/15250.jpg" style="margin-left: -50px;">
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 2 -->
+        <div id="p2" class="paper">
+            <div class="front">
+                <div id="f2" class="front-content" style="box-shadow: 10px 10px grey;">
+                    <h1 style="margin-left: 50px;">Halaman ketiga
+                        <iframe src="https://giphy.com/embed/g7GKcSzwQfugw" style="margin-left: -25px;"></iframe>
+                    </h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b2" class="back-content">
+                    <h1 style="margin-left: 50px;">Halaman keempat
+                        <img src="./Wallpaper/759351.jpg" style="margin-left: -50px;">
+                    </h1>
+                </div>
+            </div>
+        </div>
+        <!-- Paper 3 -->
+        <div id="p3" class="paper">
+            <div class="front">
+                <div id="f3" class="front-content" style="box-shadow: 10px 10px grey;">
+                    <h1 style="margin-left: 50px;">Halaman kelima
+                        <iframe width="300" height="auto" src="https://www.youtube.com/embed/dQw4w9WgXcQcontrols=0" style="margin-left: -25px;"></iframe>
+                    </h1>
+                </div>
+            </div>
+            <div class="back">
+                <div id="b3" class="back-content">
+                    <h1 style="margin-left: 50px;">Halaman keenam
+                        <div style="text-align:center; width: 300px;"> 
+                            <button onclick="playPause()" style="margin-left: -25px;">Play/Pause</button> 
+                            <br><br>
+                            <video id="video1" width="300px" style="margin-left: -50px;">
+                              <source src="JVKE - golden hour (Official Lyric Video).mp4" type="video/mp4">
+                            </video>
+                          </div> 
+                          
+                          <script> 
+                          var myVideo = document.getElementById("video1"); 
+                          
+                          function playPause() { 
+                            if (myVideo.paused) 
+                              myVideo.play(); 
+                            else 
+                              myVideo.pause(); 
+                          } 
+                          </script>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Next Button -->
+    <button id="next-btn">
+        <i class="fas fa-arrow-circle-right"></i>
+    </button>
+</body>
+</html>
